@@ -151,13 +151,13 @@ export default function WeekendJam() {
 							type="button"
 							onClick={() => setOpen(false)}
 							aria-label="Close"
-							className="absolute right-3 top-3 z-20 flex h-10 w-10 items-center justify-center border-[3px] border-ink bg-red font-display text-lg text-white shadow-[2px_2px_0_var(--ink)]"
+							className="absolute cursor-pointer right-3 top-3 z-20 flex h-10 w-10 items-center justify-center border-[3px] border-ink bg-red font-display text-lg text-white shadow-[2px_2px_0_var(--ink)]"
 						>
 							✕
 						</button>
 
 						<div className="relative z-10 flex-1 overflow-y-auto px-6 py-10 sm:px-12">
-							<span className="inline-block font-stamp text-[0.78rem] uppercase tracking-normal text-ink-soft">
+							<span className="inline-block font-stamp text-[0.78rem] capitalize tracking-normal text-ink-soft">
 								How It Started
 							</span>
 							<h2 className="font-display text-[clamp(1.6rem,4vw,2.3rem)] uppercase">
@@ -190,17 +190,17 @@ export default function WeekendJam() {
 
 							<div className="my-10 border-t-4 border-dashed border-ink" />
 
-							<span className="inline-block font-stamp text-[0.78rem] uppercase tracking-normal text-ink-soft">
+							<span className="inline-block font-stamp text-[0.78rem] capitalize tracking-normal text-ink-soft">
 								The Event
 							</span>
 							<h2 className="font-display text-[clamp(1.6rem,4vw,2.3rem)] uppercase">
 								WebDev Weekend Jam
 							</h2>
-							<p className="mt-2 font-stamp text-[0.85rem] uppercase tracking-wide text-ink-soft">
-								{weekendJamInfo.dates}
+							<p className="mt-2 font-stamp text-[0.85rem] capitalize tracking-wide text-ink-soft">
+								Aug 15 - Aug 16
 							</p>
 							<p className="mt-3 max-w-[62ch] text-ink-soft">
-								{weekendJamInfo.blurb}
+								{"(Still deciding on dates)"}
 							</p>
 
 							<div className="mt-7 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
@@ -209,7 +209,7 @@ export default function WeekendJam() {
 										key={prize.rank}
 										className={`border-[3px] border-ink px-4 py-5 ${accentClasses[prize.accent]}`}
 									>
-										<div className="font-stamp text-[0.72rem] uppercase tracking-normal opacity-70">
+										<div className="font-stamp text-[0.72rem] capitalize tracking-normal opacity-70">
 											{prize.rank}
 										</div>
 										<div className="mt-1 font-display text-lg uppercase tracking-wide">

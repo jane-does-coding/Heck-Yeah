@@ -4,7 +4,7 @@ import Sfx from "@/components/Sfx";
 export default function ShopSection() {
 	return (
 		<section id="shop" className="px-6 py-14">
-			<div className="mx-auto max-w-5xl">
+			<div className="mx-auto max-w-[80vw]">
 				<div className="mb-2 flex flex-wrap items-center gap-5">
 					<Sfx word="Loot!" className="rotate-[6deg]" />
 					<div>
@@ -30,7 +30,7 @@ export default function ShopSection() {
 						Buy Now
 					</a>
 				</div>
-				<div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+				<div className="mt-8 grid gap-x-[4vw] gap-y-[4vh] sm:grid-cols-2 lg:grid-cols-3">
 					{shopItems.map((item, i) => (
 						<div
 							key={item.name}
@@ -45,6 +45,11 @@ export default function ShopSection() {
 							<span className="mt-auto inline-block self-start border-2 border-ink bg-red px-2.5 py-1 font-stamp text-[0.78rem] uppercase tracking-wide text-white">
 								{item.price}
 							</span>
+							<img
+								src={item.img}
+								className="w-[6vw] absolute top-[-2vw] right-[-2.5vw] rounded-[1vh]"
+								alt=""
+							/>
 						</div>
 					))}
 				</div>

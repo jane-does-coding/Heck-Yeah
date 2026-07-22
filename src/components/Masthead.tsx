@@ -1,7 +1,6 @@
 const links = [
 	{ href: "#ys", label: "The Ship" },
 	{ href: "#ideas", label: "Ideas" },
-	{ href: "#steps", label: "How It Works" },
 	{ href: "#shop", label: "Shop" },
 	{ href: "#faq", label: "FAQ" },
 	{ href: "#contact", label: "Contact" },
@@ -13,8 +12,11 @@ export default function Masthead() {
 			<div className="mx-auto flex max-w-5xl flex-wrap items-center justify-between gap-4 px-6 py-3">
 				<div className="font-display text-4xl uppercase tracking-wide">
 					HACK<span className="text-red">YEAH!</span>
+					<p className="text-[1.5vh] font-sans font-light capitalize">
+						by Jenny • July 22 - Aug 14
+					</p>
 				</div>
-				<nav className="flex flex-wrap gap-4 font-stamp text-[0.78rem] uppercase tracking-wide">
+				<nav className="flex flex-wrap gap-4 font-stamp text-[0.78rem] tracking-normal">
 					{links.map((link) => (
 						<a
 							key={link.href}

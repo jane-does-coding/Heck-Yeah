@@ -1,6 +1,6 @@
 export default function ContactSection() {
 	return (
-		<section id="contact" className="px-6 py-6">
+		<section id="contact" className="px-6 pt-8">
 			<div className="mx-auto max-w-5xl">
 				<div className="flex flex-wrap items-center justify-between gap-3 border-[3px] border-ink bg-paper-dim px-5 py-3">
 					<p className="text-sm text-ink-soft">

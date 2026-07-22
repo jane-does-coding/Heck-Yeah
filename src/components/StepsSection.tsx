@@ -103,10 +103,10 @@ export default function StepsSection() {
 				<div className="mb-5 flex flex-wrap items-center gap-5">
 					<Sfx word="Go!" className="rotate-[-9deg]" />
 					<div>
-						<span className="mb-1 inline-block font-stamp text-[0.78rem] uppercase tracking-normal text-ink-soft">
+						<span className="mb-1 inline-block font-stamp text-[0.78rem] capitalize tracking-normal text-ink-soft">
 							Page By Page
 						</span>
-						<h2 className="font-display text-[clamp(1.6rem,4vw,2.3rem)] uppercase">
+						<h2 className="font-display text-[clamp(1.6rem,4vw,2.3rem)] uppercase mt-[-0.5vh]">
 							How It Works
 						</h2>
 					</div>

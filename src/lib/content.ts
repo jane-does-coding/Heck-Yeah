@@ -53,47 +53,56 @@ export const shopItems = [
 		name: "Fidget Toy",
 		blurb: "For the hands that can't stop moving while you debug.",
 		price: "1 hr",
+		img: "/fidget.png",
 	},
 	{
 		name: "Blanket",
-		blurb: "Hackathon all-nighters go better wrapped in something cozy.",
-		price: "5 hrs",
+		blurb: "If it prints well, it will be a blanket - if not then hoodie",
+		price: "10 hrs",
+		img: "/blanket.png",
 	},
 	{
 		name: "LinkedIn Recommendation",
-		blurb: "Written personally by Jenny, no template, first-person and real.",
+		blurb:
+			"This one is for all the Larpers out there, trust me ima write a good one for ya.",
 		price: "3 hrs",
 	},
 	{
 		name: "LinkedIn Premium",
-		blurb: "A few months of Premium to go with that shiny new recommendation.",
+		blurb: "A few months of Premium for all the Larpers and Linkedin-maxxers.",
 		price: "6 hrs",
+		img: "/linkedin.png",
 	},
 	{
-		name: "LeetCode Premium",
+		name: "Instant Noodles PACK OF 12",
 		blurb:
 			"Grind the algorithms in style. A year of Premium, mock interviews included.",
-		price: "7 hrs",
+		price: "2 hrs",
+		img: "/noodles.png",
 	},
 	{
 		name: "Apple Pencil",
 		blurb: "For clean lines and pressure-sensitive panels.",
-		price: "8 hrs",
+		price: "21 hrs",
+		img: "/apple-pen.png",
 	},
 	{
-		name: "eReader",
+		name: "Polaroid Go Gen 3",
 		blurb: "Read your comic-writing inspiration on the way there.",
-		price: "12 hrs",
+		price: "20 hrs",
+		img: "/cam.webp",
 	},
 	{
-		name: "Drawing Tablet",
-		blurb: "The big one. For the artist ready to go all-in on the craft.",
-		price: "15 hrs",
+		name: "Sony WH-CH720N Noise Canceling Headphones",
+		blurb: "Those are the headphones I have, truly amazing",
+		price: "30 hrs",
+		img: "/headphones.webp",
 	},
 	{
-		name: "Comics Grant",
-		blurb: "Cash funding to print, publish, or promote your finished comic.",
+		name: "$15 Comics Grant",
+		blurb: "Go buy some comic books, bleh :D",
 		price: "3 hrs",
+		img: "/comic2.png",
 	},
 ];
 
@@ -127,20 +136,20 @@ export const weekendJamInfo = {
 };
 
 export const weekendJamPrizes = [
-	{ rank: "1st Place", reward: "Exclusive Hoodie + Blanket", accent: "yellow" },
-	{ rank: "2nd Place", reward: "Blanket", accent: "dim" },
-	{ rank: "3rd Place", reward: "Blanket", accent: "dim" },
+	{ rank: "1st Place", reward: "Still Deciding", accent: "yellow" },
+	{ rank: "2nd Place", reward: "Still Deciding", accent: "dim" },
+	{ rank: "3rd Place", reward: "Still Deciding", accent: "dim" },
 	{ rank: "Everyone Who Submits", reward: "Stickers", accent: "blue" },
 ];
 
 export const faqs = [
 	{
 		q: 'What actually counts as an "interactive web comic"?',
-		a: "Any comic that lives on the web and does more than sit there: panels that react to clicks, scroll-triggered reveals, branching choose-your-path panels, sound, animation, tiny embedded games. If a reader can do something to it, it counts.",
+		a: "Any comic that lives: panels that react to clicks, scroll-triggered reveals, branching choose-your-path panels, sound, animation, tiny embedded games, etc.",
 	},
 	{
 		q: "I can't draw. Can I still join?",
-		a: "Yes. Stick figures, collage, vector shapes, heavily-edited sketches — style matters way less than the story and the interaction. Per the grading formula above, a great interactive site can still score high even with simple art.",
+		a: "Yes. Art doesn't matter! What matters is the story you are sharing!",
 	},
 	{
 		q: "What tools or languages can I use?",
@@ -148,19 +157,19 @@ export const faqs = [
 	},
 	{
 		q: "How do I log my hours?",
-		a: "Details on the exact hour-logging tool drop when Hack Yeah officially opens — watch the Hack Club Slack.",
+		a: "You can log your hours on Hackatime, and for art you can log your hours on Lapse!",
 	},
 	{
 		q: "Can I work with a friend?",
-		a: "Solo or as a team — just make sure the hours logged reflect who actually did the work.",
+		a: "Solo or as a team, doesn't matter! Everyone's time is logged seperately though.",
 	},
 	{
 		q: "Is there a deadline?",
 		a: "Dates are still being finalized. The official launch and ship-by date will be announced on Slack.",
 	},
 	{
-		q: "How does the LinkedIn recommendation actually work?",
-		a: "Log 3 hours, ship something real, and Jenny will personally write you a LinkedIn recommendation — first-person, no templates.",
+		q: "Is this real?",
+		a: "yes! jame gam is run by Hack Club, a 501(c)(3) nonprofit, that wants to encourage teens to learn more about tech!",
 	},
 	{
 		q: "Is the submission form live yet?",
