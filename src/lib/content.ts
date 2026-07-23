@@ -169,7 +169,7 @@ export const faqs = [
 	},
 	{
 		q: "Is this real?",
-		a: "yes! jame gam is run by Hack Club, a 501(c)(3) nonprofit, that wants to encourage teens to learn more about tech!",
+		a: "yes! Hack Yeah is run by Hack Club, a 501(c)(3) nonprofit, that wants to encourage teens to learn more about tech!",
 	},
 	{
 		q: "Is the submission form live yet?",

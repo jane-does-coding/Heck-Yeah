@@ -9,19 +9,19 @@ import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 
 export default function Home() {
-  return (
-    <>
-      <Masthead />
-      <main>
-        <Hero />
-        <YsSection />
-        <IdeasSection />
-        <StepsSection />
-        <ShopSection />
-        <FaqSection />
-        <ContactSection />
-      </main>
-      <Footer />
-    </>
-  );
+	return (
+		<>
+			<Masthead />
+			<main>
+				<Hero />
+				<YsSection />
+				<IdeasSection />
+				<StepsSection />
+				<ShopSection />
+				<FaqSection />
+				<ContactSection />
+			</main>
+			<Footer />
+		</>
+	);
 }
