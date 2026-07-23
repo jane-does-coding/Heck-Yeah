@@ -110,6 +110,12 @@ export const shopItems = [
 		price: "5 hrs",
 		img: "/comic2.png",
 	},
+	{
+		name: "Minecraft",
+		blurb: "Imagine not alr having Minecraft in 2026",
+		price: "8 hrs",
+		img: "/minecraft.png",
+	},
 ];
 
 export const weekendJamStory = [
