@@ -104,6 +104,12 @@ export const shopItems = [
 		price: "3 hrs",
 		img: "/comic2.png",
 	},
+	{
+		name: "$25 Lego Set Grants",
+		blurb: "Ptss.. It's stackable",
+		price: "5 hrs",
+		img: "/comic2.png",
+	},
 ];
 
 export const weekendJamStory = [
