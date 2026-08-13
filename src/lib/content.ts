@@ -1,190 +1,214 @@
+export const meta = {
+	name: "Hack Yeah!",
+	org: "Hack Club",
+	programme: "You Ship, We Ship",
+	window: "22 July to 14 August 2026",
+	editor: "Jenny",
+	submitUrl: "https://forms.hackclub.com/t/h8VuWULvxFus",
+	shopUrl: "https://forms.hackclub.com/t/jAGuiLkx74us",
+	slack: "#hack-yeah-ysws",
+	email: "jenny@hackclub.com",
+};
+
+export const keywords = [
+	"Interactive",
+	"Web comic",
+	"Any framework",
+	"Free to enter",
+	"Real prizes",
+];
+
+export const briefFacts = [
+	{ label: "Who", value: "Anyone 18 or under" },
+	{ label: "Cost", value: "Free" },
+	{ label: "You make", value: "One interactive web comic" },
+	{ label: "You earn", value: "Prizes for the hours you log" },
+	{ label: "Window", value: "22 July to 14 August 2026" },
+	{ label: "Run by", value: "Hack Club, a 501(c)(3) nonprofit" },
+];
+
+export const prizeTeaser = [
+	"Blanket",
+	"Apple Pencil",
+	"Polaroid Go",
+	"Sony WH-CH720N",
+	"LinkedIn Premium",
+	"Comics grant",
+	"Lego grant",
+	"Minecraft",
+];
+
+export const buildFeatures = [
+	{
+		title: "Panels that react to clicks",
+		body: "The reader clicks, hovers or drags something, and the page responds.",
+	},
+	{
+		title: "Reveals tied to scrolling",
+		body: "Panels appear or change as the reader scrolls down the page.",
+	},
+	{
+		title: "Branching choices",
+		body: "The reader picks a path, and that choice changes what happens next.",
+	},
+	{
+		title: "Sound, animation and small games",
+		body: "You can add audio, animation or a small game inside the comic.",
+	},
+];
+
+export const gradingRows = [
+	{ site: "Well built website", art: "40%", web: "60%" },
+	{ site: "Basic website", art: "30%", web: "70%" },
+];
+
 export const ideas = [
 	{
-		title: "The Ending Depends On You",
-		body: "A choose-your-own-adventure comic where clicking a panel actually changes the story- and the ending.",
+		title: "The ending depends on you",
+		body: "The reader clicks a panel to pick what happens next, and the choice changes the ending.",
 	},
 	{
-		title: "The Infinite Scroll Secret",
-		body: "A comic that keeps going as you scroll... until panel 50 reveals something nobody was expecting.",
+		title: "The infinite scroll secret",
+		body: "A comic that keeps going as the reader scrolls, with a reveal near the end.",
 	},
 	{
-		title: "Solve It To See It",
-		body: "Panels stay locked behind a tiny puzzle, riddle, or mini-game. No solve, no next page.",
+		title: "Solve it to see it",
+		body: "Each panel is locked behind a puzzle or riddle. The reader solves it to reach the next page.",
 	},
 	{
-		title: "Your Most Chaotic Hackathon Moment",
-		body: "Turn that 3am bug-fixing spiral or demo-day disaster into a comic. True stories hit hardest.",
+		title: "Your most chaotic hackathon moment",
+		body: "Turn a real story from a hackathon into a comic. True stories work well.",
 	},
 	{
-		title: "A Comic That Talks Back",
-		body: 'Type a response and the next panel reacts to what you wrote. Even a fake "AI" character works.',
+		title: "A comic that talks back",
+		body: "The reader types a response, and the next panel reacts to what they wrote.",
 	},
 	{
-		title: "One Panel, Infinite Zoom",
-		body: "A single giant image you scroll or zoom into, discovering a whole story hidden in the details.",
+		title: "One panel, infinite zoom",
+		body: "One large image the reader scrolls or zooms into, with the story hidden in the detail.",
 	},
 ];
 
 export const steps = [
 	{
-		title: "Get an idea",
-		body: "Steal one from the Ideas section above, or bring your own chaos. Anything goes.",
+		title: "Make a website",
+		body: "Draw and code your interactive web comic. Use any tools, any stack and any language. Log your hours as you go.",
 	},
 	{
-		title: "Draw + code your comic",
-		body: "Build your interactive web comic with any tools or languages you want. No restrictions.",
+		title: "Submit it",
+		body: "Send the project to us before the window closes. There is no application and no interview.",
 	},
 	{
-		title: "Log your hours",
-		body: "Track your time as you build - those hours become the currency you spend in the Shop.",
-	},
-	{
-		title: "Ship it",
-		body: "Submissions are open - hit the submit button up top and send your project our way.",
-	},
-	{
-		title: "Cash in",
-		body: "Spend the hours you logged on real prizes in the Shop below.",
+		title: "Get prizes",
+		body: "Spend the hours you logged on real items from the shop. We post them to you.",
 	},
 ];
 
 export const shopItems = [
 	{
-		name: "Fidget Toy",
-		blurb: "For the hands that can't stop moving while you debug.",
+		name: "Fidget toy",
+		blurb: "A small fidget toy.",
 		price: "1 hr",
 		img: "/fidget.png",
 	},
 	{
-		name: "Blanket",
-		blurb: "If it prints well, it will be a blanket - if not then hoodie",
-		price: "10 hrs",
-		img: "/blanket.png",
-	},
-	{
-		name: "LinkedIn Recommendation",
-		blurb:
-			"This one is for all the Larpers out there, trust me ima write a good one for ya.",
-		price: "3 hrs",
-	},
-	{
-		name: "LinkedIn Premium",
-		blurb: "A few months of Premium for all the Larpers and Linkedin-maxxers.",
-		price: "6 hrs",
-		img: "/linkedin.png",
-	},
-	{
-		name: "Instant Noodles PACK OF 12",
-		blurb:
-			"Grind the algorithms in style. A year of Premium, mock interviews included.",
+		name: "Instant noodles",
+		blurb: "A pack of twelve instant noodle cups.",
 		price: "2 hrs",
 		img: "/noodles.png",
 	},
 	{
-		name: "Apple Pencil",
-		blurb: "For clean lines and pressure-sensitive panels.",
-		price: "21 hrs",
-		img: "/apple-pen.png",
-	},
-	{
-		name: "Polaroid Go Gen 3",
-		blurb: "Read your comic-writing inspiration on the way there.",
-		price: "20 hrs",
-		img: "/cam.webp",
-	},
-	{
-		name: "Sony WH-CH720N Noise Canceling Headphones",
-		blurb: "Those are the headphones I have, truly amazing",
-		price: "30 hrs",
-		img: "/headphones.webp",
-	},
-	{
-		name: "$15 Comics Grant",
-		blurb: "Go buy some comic books, bleh :D",
+		name: "LinkedIn recommendation",
+		blurb: "A written recommendation on your LinkedIn profile.",
 		price: "3 hrs",
-		img: "/comic2.png",
 	},
 	{
-		name: "$25 Lego Set Grants",
-		blurb: "Ptss.. It's stackable",
+		name: "$15 comics grant",
+		blurb: "A $15 gift card to spend on comic books.",
+		price: "3 hrs",
+		img: "/comic.png",
+	},
+	{
+		name: "$25 Lego grant",
+		blurb: "A $25 gift card to spend on a Lego set. You can stack this grant.",
 		price: "5 hrs",
 		img: "/comic2.png",
 	},
 	{
+		name: "LinkedIn Premium",
+		blurb: "A few months of LinkedIn Premium.",
+		price: "6 hrs",
+		img: "/linkedin.png",
+	},
+	{
 		name: "Minecraft",
-		blurb: "Imagine not alr having Minecraft in 2026",
+		blurb: "A copy of Minecraft.",
 		price: "8 hrs",
 		img: "/minecraft.png",
 	},
-];
-
-export const weekendJamStory = [
 	{
-		title: "2 AM",
-		body: "Heidi stares at her half-built site. Something's missing, and it isn't just semicolons.",
+		name: "Blanket",
+		blurb: "A printed blanket. If the print does not work well, a hoodie instead.",
+		price: "10 hrs",
+		img: "/blanket.png",
 	},
 	{
-		title: "Enter Orpheus",
-		body: "He shows up with a lyre, humming the oldest debugging song ever written.",
+		name: "Polaroid Go Gen 3",
+		blurb: "An instant camera.",
+		price: "20 hrs",
+		img: "/cam.webp",
 	},
 	{
-		title: "Sunrise Deploy",
-		body: "Midnight bug hunts turn into sunrise deploys. Neither of them notices the time pass.",
+		name: "Apple Pencil",
+		blurb: "An Apple Pencil for drawing on an iPad.",
+		price: "21 hrs",
+		img: "/apple-pen.png",
 	},
 	{
-		title: "The Realization",
-		body: "The best code isn't written alone in the dark. It's built together, out loud, for a weekend.",
+		name: "Sony WH-CH720N",
+		blurb: "Noise cancelling headphones.",
+		price: "30 hrs",
+		img: "/headphones.webp",
 	},
-	{
-		title: "It Begins",
-		body: "And so, the WebDev Weekend Jam was born.",
-	},
-];
-
-export const weekendJamInfo = {
-	dates: "Oct 2–4, 2026 (dates tentative)",
-	blurb:
-		"One weekend. Any stack, any framework. Ship something you're proud of.",
-};
-
-export const weekendJamPrizes = [
-	{ rank: "1st Place", reward: "Still Deciding", accent: "yellow" },
-	{ rank: "2nd Place", reward: "Still Deciding", accent: "dim" },
-	{ rank: "3rd Place", reward: "Still Deciding", accent: "dim" },
-	{ rank: "Everyone Who Submits", reward: "Stickers", accent: "blue" },
 ];
 
 export const faqs = [
 	{
-		q: 'What actually counts as an "interactive web comic"?',
-		a: "Any comic that lives: panels that react to clicks, scroll-triggered reveals, branching choose-your-path panels, sound, animation, tiny embedded games, etc.",
+		q: 'What counts as an "interactive web comic"?',
+		a: "Any comic where the reader can do something that changes what happens next. Panels that react to clicks, reveals tied to scrolling, branching paths, sound, animation and small embedded games all count.",
 	},
 	{
-		q: "I can't draw. Can I still join?",
-		a: "Yes. Art doesn't matter! What matters is the story you are sharing!",
+		q: "I cannot draw. Can I still join?",
+		a: "Yes. The art does not have to be good. What matters is the story you tell.",
 	},
 	{
 		q: "What tools or languages can I use?",
-		a: "Anything that runs in a browser: plain HTML/CSS/JS, React, Svelte, p5.js, Twine, you name it. No restrictions on your stack.",
+		a: "Anything that runs in a browser. Plain HTML, CSS and JavaScript, React, Svelte, p5.js, Twine and Ren'Py all work.",
 	},
 	{
 		q: "How do I log my hours?",
-		a: "You can log your hours on Hackatime, and for art you can log your hours on Lapse!",
+		a: "Log code hours on Hackatime and art hours on Lapse. Both count toward what you can spend in the shop.",
 	},
 	{
 		q: "Can I work with a friend?",
-		a: "Solo or as a team, doesn't matter! Everyone's time is logged seperately though.",
+		a: "Yes. You can work alone or in a team. Everyone logs their time separately.",
 	},
 	{
 		q: "Is there a deadline?",
-		a: "Dates are still being finalized. The official launch and ship-by date will be announced on Slack.",
+		a: "The window runs from 22 July to 14 August 2026. The final ship date is announced on Slack.",
 	},
 	{
 		q: "Is this real?",
-		a: "yes! Hack Yeah is run by Hack Club, a 501(c)(3) nonprofit, that wants to encourage teens to learn more about tech!",
+		a: "Yes. Hack Yeah is run by Hack Club, a 501(c)(3) nonprofit that helps teenagers build real projects.",
 	},
 	{
-		q: "Is the submission form live yet?",
-		a: 'Yes! Hit the "Submit Your Comic" button up top to send in your project.',
+		q: "Is the submission form open?",
+		a: "Yes. Use the submit button at the top of the page.",
 	},
+];
+
+export const colophonLinks = [
+	{ label: "Hack Club", href: "https://hackclub.com/" },
+	{ label: "Privacy and terms", href: "https://hackclub.com/privacy-and-terms" },
+	{ label: "Safeguarding", href: "https://hackclub.com/safeguarding" },
 ];

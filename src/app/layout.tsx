@@ -1,22 +1,23 @@
 import type { Metadata } from "next";
-import { Bangers, Nunito } from "next/font/google";
-import CursorDots from "@/components/CursorDots";
+import { IBM_Plex_Mono, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 
-const bangers = Bangers({
-	variable: "--font-bangers",
-	weight: "400",
+const jakarta = Plus_Jakarta_Sans({
+	variable: "--font-jakarta",
 	subsets: ["latin"],
+	weight: ["400", "500", "600", "700", "800"],
 });
 
-const nunito = Nunito({
-	variable: "--font-nunito",
+const plexMono = IBM_Plex_Mono({
+	variable: "--font-plex-mono",
 	subsets: ["latin"],
+	weight: ["400", "500"],
 });
 
 export const metadata: Metadata = {
-	title: "Hack Yeah!",
-	description: "Build an interactive web comic, get prizes. Hack Club YSWS.",
+	title: "Hack Yeah! Build an interactive web comic",
+	description:
+		"Build an interactive web comic, log the hours you spend on it, and spend those hours on real items. A Hack Club You Ship, We Ship programme running 22 July to 14 August 2026.",
 };
 
 export default function RootLayout({
@@ -25,9 +26,11 @@ export default function RootLayout({
 	children: React.ReactNode;
 }>) {
 	return (
-		<html lang="en" className={`${bangers.variable} ${nunito.variable} h-full`}>
-			<body className="min-h-full bg-paper text-ink font-body antialiased overflow-x-hidden">
-				<CursorDots />
+		<html
+			lang="en"
+			className={`${jakarta.variable} ${plexMono.variable}`}
+		>
+			<body className="min-h-dvh bg-void font-sans text-ink antialiased">
 				{children}
 			</body>
 		</html>

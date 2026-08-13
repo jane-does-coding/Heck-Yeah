@@ -1,33 +1,25 @@
-const links = [
-	{ href: "#ys", label: "The Ship" },
-	{ href: "#ideas", label: "Ideas" },
-	{ href: "#shop", label: "Shop" },
-	{ href: "#faq", label: "FAQ" },
-	{ href: "#contact", label: "Contact" },
-];
+import { meta } from "@/lib/content";
 
 export default function Masthead() {
 	return (
-		<div className="sticky top-0 z-50 border-b-4 border-ink bg-paper">
-			<div className="mx-auto flex max-w-5xl flex-wrap items-center justify-between gap-4 px-6 py-3">
-				<div className="font-display text-4xl uppercase tracking-wide">
-					HACK<span className="text-red">YEAH!</span>
-					<p className="text-[1.5vh] font-sans font-light capitalize">
-						by Jenny • July 22 - Aug 14
-					</p>
-				</div>
-				<nav className="flex flex-wrap gap-4 font-stamp text-[0.78rem] tracking-normal">
-					{links.map((link) => (
-						<a
-							key={link.href}
-							href={link.href}
-							className="relative pb-[3px] text-ink after:absolute after:inset-x-0 after:-bottom-0.5 after:h-[3px] after:origin-left after:scale-x-0 after:bg-yellow after:transition-transform after:duration-150 hover:text-red hover:after:scale-x-100"
-						>
-							{link.label}
-						</a>
-					))}
-				</nav>
+		<header className="sticky top-0 z-40 border-b border-white/[0.09] bg-void/95">
+			<div className="mx-auto flex max-w-[74rem] items-center justify-between gap-6 px-4 py-3 sm:px-6">
+				<a
+					href="#brief"
+					className="text-[0.9375rem] font-extrabold text-paper"
+				>
+					Hack Yeah<span className="text-mustard">!</span>
+				</a>
+
+				<a
+					href={meta.submitUrl}
+					target="_blank"
+					rel="noopener noreferrer"
+					className="stamp-sm border border-white/25 px-3.5 py-2 text-paper transition-colors hover:border-mustard hover:text-mustard"
+				>
+					Submit
+				</a>
 			</div>
-		</div>
+		</header>
 	);
 }
