@@ -68,7 +68,6 @@ export default function Dossier({ sheets }: { sheets: Sheet[] }) {
 				<div
 					aria-hidden
 					className="absolute -bottom-[9px] left-[-9px] right-24 top-24 -rotate-[0.55deg] rounded-[2px] bg-paper-2"
-					style={{ boxShadow: "0 18px 30px -22px rgb(0 0 0 / 0.8)" }}
 				/>
 
 				{/* Tabs, cut into the top edge of the folder. */}
@@ -95,9 +94,7 @@ export default function Dossier({ sheets }: { sheets: Sheet[] }) {
 								tabIndex={on ? 0 : -1}
 								onClick={() => open(i)}
 								className={`tab-shape flex-none cursor-pointer px-4 pb-2.5 text-ink transition-colors duration-150 ${
-									on
-										? "bg-folder pt-4"
-										: "bg-folder-2 pt-2 shadow-[inset_0_-7px_9px_-8px_rgb(0_0_0_/_0.45)] hover:bg-folder"
+									on ? "bg-folder pt-4" : "bg-folder-2 pt-2 hover:bg-folder"
 								}`}
 							>
 								<span className="flex items-baseline gap-2 whitespace-nowrap">

@@ -1,162 +1,162 @@
 @import "tailwindcss";
 
 :root {
-  /* surfaces */
-  --void: #131311;
-  --void-2: #1c1b18;
-  --folder: #edc790;
-  --folder-2: #e3b678;
-  --folder-edge: #c9994f;
-  --paper: #f5f3ec;
-  --paper-2: #fdfcf7;
-  --paper-3: #ebe7dc;
+	/* surfaces */
+	--void: #131311;
+	--void-2: #1c1b18;
+	--folder: #edc790;
+	--folder-2: #e3b678;
+	--folder-edge: #c9994f;
+	--paper: #f5f3ec;
+	--paper-2: #fdfcf7;
+	--paper-3: #ebe7dc;
 
-  /* ink */
-  --ink: #16150f;
-  --ink-2: #4d4a3f;
-  --ink-3: #85806f;
+	/* ink */
+	--ink: #16150f;
+	--ink-2: #4d4a3f;
+	--ink-3: #85806f;
 
-  /* earthy accents, straight off the moodboard */
-  --forest: #4a5d4c;
-  --rust: #bd551d;
-  --mustard: #e2a127;
-  --sage: #94ac6d;
+	/* earthy accents, straight off the moodboard */
+	--forest: #4a5d4c;
+	--rust: #bd551d;
+	--mustard: #e2a127;
+	--sage: #94ac6d;
 }
 
 @theme inline {
-  --color-void: var(--void);
-  --color-void-2: var(--void-2);
-  --color-folder: var(--folder);
-  --color-folder-2: var(--folder-2);
-  --color-folder-edge: var(--folder-edge);
-  --color-paper: var(--paper);
-  --color-paper-2: var(--paper-2);
-  --color-paper-3: var(--paper-3);
-  --color-ink: var(--ink);
-  --color-ink-2: var(--ink-2);
-  --color-ink-3: var(--ink-3);
-  --color-forest: var(--forest);
-  --color-rust: var(--rust);
-  --color-mustard: var(--mustard);
-  --color-sage: var(--sage);
+	--color-void: var(--void);
+	--color-void-2: var(--void-2);
+	--color-folder: var(--folder);
+	--color-folder-2: var(--folder-2);
+	--color-folder-edge: var(--folder-edge);
+	--color-paper: var(--paper);
+	--color-paper-2: var(--paper-2);
+	--color-paper-3: var(--paper-3);
+	--color-ink: var(--ink);
+	--color-ink-2: var(--ink-2);
+	--color-ink-3: var(--ink-3);
+	--color-forest: var(--forest);
+	--color-rust: var(--rust);
+	--color-mustard: var(--mustard);
+	--color-sage: var(--sage);
 
-  --font-sans: var(--font-jakarta), ui-sans-serif, system-ui, sans-serif;
-  --font-mono: var(--font-plex-mono), ui-monospace, "SF Mono", monospace;
+	--font-sans: var(--font-jakarta), ui-sans-serif, system-ui, sans-serif;
+	--font-mono: var(--font-plex-mono), ui-monospace, "SF Mono", monospace;
 }
 
 @layer base {
-  html {
-    -webkit-text-size-adjust: 100%;
-  }
+	html {
+		-webkit-text-size-adjust: 100%;
+	}
 
-  body {
-    letter-spacing: normal;
-    background-color: var(--void);
-    background-image: radial-gradient(
-      120% 90% at 50% -10%,
-      var(--void-2) 0%,
-      var(--void) 55%
-    );
-  }
+	body {
+		letter-spacing: normal;
+		background-color: var(--void);
+		background-image: radial-gradient(
+			120% 90% at 50% -10%,
+			var(--void-2) 0%,
+			var(--void) 55%
+		);
+	}
 
-  /* Grain. The moodboard asked for it by name. */
-  body::after {
-    content: "";
-    position: fixed;
-    inset: 0;
-    z-index: 90;
-    pointer-events: none;
-    opacity: 0.05;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)'/%3E%3C/svg%3E");
-  }
+	/* Grain. The moodboard asked for it by name. */
+	body::after {
+		content: "";
+		position: fixed;
+		inset: 0;
+		z-index: 90;
+		pointer-events: none;
+		opacity: 0.05;
+		background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)'/%3E%3C/svg%3E");
+	}
 
-  ::selection {
-    background: var(--mustard);
-    color: var(--ink);
-  }
+	::selection {
+		background: var(--mustard);
+		color: var(--ink);
+	}
 
-  :focus-visible {
-    outline: 2px solid var(--rust);
-    outline-offset: 3px;
-  }
+	:focus-visible {
+		outline: 2px solid var(--rust);
+		outline-offset: 3px;
+	}
 }
 
 @layer components {
-  /* ---- paper ---- */
-  .sheet-lift {
-    box-shadow:
+	/* ---- paper ---- */
+	.sheet-lift {
+		/*  box-shadow:
       0 1px 0 color-mix(in srgb, var(--ink) 10%, transparent),
-      0 26px 45px -30px rgb(0 0 0 / 0.75);
-  }
+      0 26px 45px -30px rgb(0 0 0 / 0.75); */
+	}
 
-  .folder-lift {
-    box-shadow: 0 40px 70px -45px rgb(0 0 0 / 0.9);
-  }
+	.folder-lift {
+		box-shadow: 0 40px 70px -45px rgb(0 0 0 / 0.9);
+	}
 
-  /* ---- the folder tabs ---- */
-  .tab-shape {
-    clip-path: polygon(9px 0, calc(100% - 9px) 0, 100% 100%, 0 100%);
-  }
+	/* ---- the folder tabs ---- */
+	.tab-shape {
+		clip-path: polygon(9px 0, calc(100% - 9px) 0, 100% 100%, 0 100%);
+	}
 
-  /* ---- type primitives ---- */
-  .stamp {
-    font-family: var(--font-mono);
-    font-size: 0.75rem;
-    color: var(--ink);
-  }
+	/* ---- type primitives ---- */
+	.stamp {
+		font-family: var(--font-mono);
+		font-size: 0.75rem;
+		color: var(--ink);
+	}
 
-  .stamp-sm {
-    font-family: var(--font-mono);
-    font-size: 0.6875rem;
-    color: var(--ink);
-  }
+	.stamp-sm {
+		font-family: var(--font-mono);
+		font-size: 0.6875rem;
+		color: var(--ink);
+	}
 
-  .display {
-    font-weight: 800;
-    line-height: 0.95;
-  }
+	.display {
+		font-weight: 800;
+		line-height: 0.95;
+	}
 
-  .pill {
-    @apply inline-flex items-center rounded-full border border-ink/45 px-3.5 py-1.5;
-    font-family: var(--font-mono);
-    font-size: 0.6875rem;
-    color: var(--ink);
-  }
+	.pill {
+		@apply inline-flex items-center rounded-full border border-ink/45 px-3.5 py-1.5;
+		font-family: var(--font-mono);
+		font-size: 0.6875rem;
+		color: var(--ink);
+	}
 
-  /* ---- buttons ---- */
-  .btn {
-    @apply inline-flex items-center gap-2.5 px-5 py-3 transition-colors duration-150;
-    font-family: var(--font-mono);
-    font-size: 0.75rem;
-  }
-  .btn-solid {
-    @apply bg-ink text-paper hover:bg-rust;
-  }
-  .btn-ghost {
-    @apply border border-ink/35 text-ink hover:border-ink hover:bg-ink/[0.045];
-  }
+	/* ---- buttons ---- */
+	.btn {
+		@apply inline-flex items-center gap-2.5 px-5 py-3 transition-colors duration-150;
+		font-family: var(--font-mono);
+		font-size: 0.75rem;
+	}
+	.btn-solid {
+		@apply bg-ink text-paper hover:bg-rust;
+	}
+	.btn-ghost {
+		@apply border border-ink/35 text-ink hover:border-ink hover:bg-ink/[0.045];
+	}
 
-  .link-rule {
-    @apply border-b border-ink/30 pb-px transition-colors hover:border-rust hover:text-rust;
-  }
+	.link-rule {
+		@apply border-b border-ink/30 pb-px transition-colors hover:border-rust hover:text-rust;
+	}
 
-  /* ---- FAQ disclosure ---- */
-  .disclosure summary::-webkit-details-marker {
-    display: none;
-  }
-  .disclosure summary {
-    list-style: none;
-  }
-  .disclosure[open] .disclosure-plus {
-    transform: rotate(45deg);
-  }
+	/* ---- FAQ disclosure ---- */
+	.disclosure summary::-webkit-details-marker {
+		display: none;
+	}
+	.disclosure summary {
+		list-style: none;
+	}
+	.disclosure[open] .disclosure-plus {
+		transform: rotate(45deg);
+	}
 }
 
 @media (prefers-reduced-motion: reduce) {
-  *,
-  *::before,
-  *::after {
-    transition-duration: 0.01ms !important;
-    animation-duration: 0.01ms !important;
-  }
+	*,
+	*::before,
+	*::after {
+		transition-duration: 0.01ms !important;
+		animation-duration: 0.01ms !important;
+	}
 }
